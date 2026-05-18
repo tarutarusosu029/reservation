@@ -30,6 +30,44 @@ main {
     text-align: center;
 }
 
+.calendar .currentMonth{
+text-align: left;
+}
+
+.calendar table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    color:#6C7B91;
+}
+
+.calendar td {
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar td:first-child {
+    color: #888;
+}
+
+.calendar td:last-child {
+    color: #888;
+}
+
+.calendar .today {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+}
+
 a {
     color: #6C7B91;
 }
