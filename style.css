@@ -27,6 +27,7 @@ h1 {
 main {
     flex: 1;
     width: 80%;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -39,6 +40,7 @@ text-align: left;
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
+    max-width: 500px;
     color:#6C7B91;
 }
 
