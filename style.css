@@ -8,13 +8,15 @@ body {
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     font-family: sans-serif;
     text-align: center;
     min-height: 90vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     color: #6C7B91;
     background: radial-gradient(#E6EFF6, #C9DCEA);
 }
@@ -27,27 +29,22 @@ h1 {
 main {
     flex: 1;
     width: 80%;
-    max-width: 300px;
     text-align: center;
+    overflow-x: auto;
 }
 
-.calendar .currentMonth{
-text-align: left;
-}
+/* =========================
+   共通
+========================= */
 
-.calendar table {
-    border-spacing: 0;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 500px;
-    color:#6C7B91;
+.calendar .currentMonth {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #6C7B91;
 }
 
 .calendar td {
-    width: 10px;
-    height: 10px;
-    padding: 5px;
     text-align: center;
 }
 
@@ -59,16 +56,114 @@ text-align: left;
     color: #888;
 }
 
+/* today */
+
 .calendar .today {
-    width: 40px;
-    aspect-ratio: 1 / 1;
-    display: inline-flex;
+    width: 1.8em;
+    height: 1.8em;
+
+    margin: 0 auto;
+
+    display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 50%;
-    background: #ff6565;
+
     color: #fff;
+
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+
+    background: radial-gradient(#ff6565, #ff7070);
+    border: 1px solid #ff6565;
+
+    box-shadow:
+        -0.5px -0.5px 5px rgba(255, 2, 2, 0.4),
+        5px 5px 50px rgba(40, 100, 100, 0.4);
+
+    transform: translateX(-1px);
 }
+
+/* =========================
+   月表示
+========================= */
+
+.calendar.month .currentMonth {
+    margin-top: 20px;
+}
+
+.calendar.month table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    margin: 0 auto;
+
+    width: 50vw;
+    height: 60vw;
+
+    color: #6C7B91;
+}
+
+.calendar.month td {
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+}
+
+.calendar.month .today {
+    font-size: 1rem;
+}
+
+/* =========================
+   年表示
+========================= */
+
+.calendar.year .yearCalendar {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.calendar.year .yearCalendar>tbody>tr>td {
+    vertical-align: top;
+    width: 25%;
+    padding: 4px;
+}
+
+.calendar.year .currentMonth {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+.calendar.year .monthTable {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    table-layout: fixed;
+
+    color: #6C7B91;
+}
+
+.calendar.year .monthTable td {
+    padding: 2px;
+    font-size: 0.75rem;
+}
+
+.calendar.year .today {
+    font-size: 0.75rem;
+}
+
+/* =========================
+   footer
+========================= */
 
 a {
     color: #6C7B91;
@@ -84,7 +179,7 @@ footer p {
 }
 
 footer a {
-    margin: 0px 2.5%;
+    margin: 0 2.5%;
 }
 
-/* ©2026 tarutarusosu029 */
+/*©2026 tarutarusosu029*/
