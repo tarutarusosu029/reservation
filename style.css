@@ -57,31 +57,22 @@ main {
 }
 
 /* today */
-
 .calendar .today {
     width: 1.8em;
     height: 1.8em;
-
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     color: #fff;
-
     line-height: 1;
     font-variant-numeric: tabular-nums;
-
     background: radial-gradient(#ff6565, #ff7070);
     border: 1px solid #ff6565;
-
     box-shadow:
         -0.5px -0.5px 5px rgba(255, 2, 2, 0.4),
         5px 5px 50px rgba(40, 100, 100, 0.4);
-
     transform: translateX(-1px);
 }
 
@@ -108,7 +99,8 @@ main {
 .calendar.month td {
     width: 10px;
     height: 10px;
-    padding: 5px;
+    padding: 2px 5px 8px;
+    vertical-align: top;
 }
 
 .calendar.month .today {
@@ -142,13 +134,9 @@ main {
 .calendar.year .monthTable {
     border-spacing: 0;
     border-collapse: collapse;
-
     width: 100%;
-
     margin: 0 auto;
-
     table-layout: fixed;
-
     color: #6C7B91;
 }
 
