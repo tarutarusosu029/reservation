@@ -96,6 +96,12 @@ main {
     color: #6C7B91;
 }
 
+.calendar.month tr:first-child td {
+    height: auto;
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+
 .calendar.month td {
     width: 10px;
     height: 10px;
