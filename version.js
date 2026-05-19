@@ -9,3 +9,4 @@ fetch('version.txt')
     .catch(() => {
         document.getElementById('v').textContent = 'unknown';
     });
+//©2026 tarutarusosu029
