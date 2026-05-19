@@ -91,22 +91,23 @@ main {
     margin: 0 auto;
 
     width: 50vw;
-    height: 60vw;
 
     color: #6C7B91;
 }
 
-.calendar.month tr:first-child td {
-    height: auto;
-    padding: 2px 5px;
-    vertical-align: middle;
-}
-
 .calendar.month td {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 60px;
     padding: 2px 5px 8px;
     vertical-align: top;
+}
+
+/* 曜日行 */
+
+.calendar.month tr:first-child td {
+    height: auto;
+    padding: 0 5px 2px;
+    vertical-align: middle;
 }
 
 .calendar.month .today {
